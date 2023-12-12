@@ -1,0 +1,27 @@
+result = 0
+for i in range(0,1000):
+ operator = input("enter the operator +,-,/,*,power(**),quit(q)\n")
+ if operator != 'q':
+  num1 = int(input("enter the first number\n"))
+  num2 = int(input("enter the second number\n"))
+ if operator == "+":
+  result = num1 + num2
+  print(f"{num1} + {num2} = {result} \n") # here we are using f string to convert the different data types into string in an easy way
+ if operator == "-":
+  result = num1 - num2
+  print(f"{num1} - {num2} = {result} \n")
+ if operator == "*":
+  result = num1 * num2
+  print(f"{num1} * {num2} = {result} \n")
+ if operator == "**":
+   result = num1**num2 #this operator will give us the power of number 1 for example num1**num2 = num1 Power num2
+   print(f"{num1}^{num2} = {result} \n")
+ if operator == "/":
+  if num2!=0:
+   result = num1/num2
+   print(f"{num1} / {num2} = {result} \n")
+  else:
+   print("divide by zero error\n")
+   break
+ if operator == 'q':
+  break
