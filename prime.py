@@ -1,4 +1,4 @@
-#Write a Python program to check whether a number is Prime or not
+#Python program to check whether a number is Prime or not
 def prime(n):
     if n <= 1:
         print("not prime")
