@@ -1,3 +1,4 @@
+# Python code for a 2 input calculator
 o=input("Start?('y/n')")
 if o=="y":
     for i in range (0,1000):
